@@ -8,8 +8,8 @@ module.exports = {
         filename: './app.js'
     },
     devServer: {
-        port:8080,
-        contentBase: './public'
+        port: 8080,
+        contentBase: './public',
     },
     resolve: {
         extensions: ['', '.js', '.jsx'],
@@ -24,10 +24,10 @@ module.exports = {
         loaders: [{
             test: /.js[x]?$/,
             loader: 'babel-loader',
-            exclude: '/node_modules/',
+            exclude: /node_modules/,
             query: {
                 presets: ['es2015', 'react'],
-                plugins: ['trasform-object-rest-spread']
+                plugins: ['transform-object-rest-spread']
             }
         }, {
             test: /\.css$/,
