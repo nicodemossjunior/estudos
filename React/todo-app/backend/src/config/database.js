@@ -3,6 +3,5 @@
 const mongoose = require('mongoose')
 // Para retirar mensagem de advertência, a api de Promisses do mongoose vai utilizar a api de Promisses do próprio node
 mongoose.Promisse = global.Promise
-module.exports = mongoose.connect('mongodb://localhost/todo')
-
-
+//module.exports = mongoose.connect('mongodb://localhost/todo')
+module.exports = mongoose.connect('mongodb://192.168.99.101/todo')
